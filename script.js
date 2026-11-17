@@ -5,20 +5,28 @@ class Rectangle {
 		this.width=width;
 		this.height=height;
 	}
-	getArea(width,height)
+	getwidth()
 	{
-		return width*height;
+      return this.width;
+	}
+	getheight()
+	{
+		return this.height;
+	}
+	getArea()
+	{
+		return this.width*this.height;
 	}
 }
 
 class Square extends Animal {
 	constructor(side)
 	{
-		this.side=side;
+		super(side,side);
 	}
-	getPerimeter(side)
+	getPerimeter()
 	{
-		return 4*side;
+		return 4*this.width;
 	}
 }
 
